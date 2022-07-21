@@ -1,4 +1,4 @@
-const { Schema } = require("mongoose");
+const { Schema } = require('mongoose')
 
 const Restaurant = new Schema(
   {
@@ -6,9 +6,9 @@ const Restaurant = new Schema(
     type: { type: String, required: true },
     menu: { type: String, required: true },
     about: { type: String, required: true },
-    images: { type: Object },
+    images: { type: String }
   },
   { timestamps: true }
-);
+)
 
-module.exports = Restaurant;
+module.exports = Restaurant
