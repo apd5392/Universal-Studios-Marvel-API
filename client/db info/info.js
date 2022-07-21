@@ -51,7 +51,7 @@ const Ride = [
   },
   {
     ride: 'The Amazing Adventures of Spider-Man',
-    ide_type: 'Motion Simulation, 3-D / 4-D Experience',
+    ride_type: 'Motion Simulation, 3-D / 4-D Experience',
     requirements:
       'Minimum Height 40”. Under 48” (122 cm) Requires Supervising Companion',
     image:
