@@ -1,4 +1,4 @@
-const { Schema } = require("mongoose");
+const { Schema } = require('mongoose')
 
 const Park = new Schema(
   {
@@ -6,9 +6,9 @@ const Park = new Schema(
     location: { type: String, required: true },
     parkHours: { type: String, required: true },
     about: { type: String, required: true },
-    images: { type: Object },
+    images: { type: String }
   },
   { timestamps: true }
-);
+)
 
-module.exports = Park;
+module.exports = Park
