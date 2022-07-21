@@ -3,8 +3,8 @@ const { Shop } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
-const main = () => {
-  const shops = async()=> [{
+const main = async() => {
+  const shops = [{
     name: 'Marvel Alterniverse Store',
     about:
       'If you are always ready to save the day, we got the Marvel Super Hero supplies you need. Stock up on character t-shirts, sweatshirts, toys, collectibles, mugs and more. Plus you might get the chance to have your photo taken with Spider-Man.',
@@ -32,8 +32,10 @@ const main = () => {
     image:
       'https://www.universalorlando.com/webdata/k2/en/us/files/Images/gds/ioa-spider-man-shop-universal-front-a.jpg'
   }]
-  await Shop.insertMany(shop)
-  console.log('created shop')
+
+
+  await Shop.insertMany(shops)
+  console.log(shops)
   return(shops)
 }
 const run = async () => {
