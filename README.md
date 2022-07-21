@@ -11,7 +11,7 @@
 3. Express test in terminal or insomnia
 4. React boilerplate setup
 5. Create functions for API calls in React
-6. CSS etc.
+6. CSS etc...
 
 
 # Wireframing
